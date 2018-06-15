@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="FCC: Portfolio Page">
+    <meta name="keywords" content="Freecodecamp, responsive-web-design, project, portfolio">
+    <meta name="author" content="Michael J Peppers <mcgdevfunk824@protonmail.com>">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
+    <title>Portfolio Page</title>
+    <link href="styles/styles.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js " integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49 " crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js " integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T " crossorigin="anonymous "></script>
+    <script src="https://rawgit.com/mattboldt/typed.js/v2.0.6/lib/typed.min.js "></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50"></body>
+
+<nav class="navbar navbar-expand-sm navbar-light fixed-top justify-content-center shadow p-4 mb-4 bg-white" id="navbar">
+    <a class="navbar-brand" href="#">
+        <img src="mjplogo.png" alt="logo" style="width:40px;">
+    </a>
+
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="link-underline" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+            <a class="link-underline" href="#projects">Projects</a>
+        </li>
+        <li class="nav-item">
+            <a class="link-underline" href="#contact">Contact</a>
+        </li>
+        <li class="nav-item">
+            <a class="link-underline" href="#services">Services</a>
+        </li>
+    </ul>
+</nav>
+
+<section id="hero">
+    <div id="hero-caption">
+        <div class="container-fluid" id="welcome-section">
+            <div class="col-sm-10 offset-sm-1">
+                <h1 class="display-3">Michael J Peppers</h1>
+                <h1>I am
+                    <span class="txt-rotate" data-period="2000" data-rotate='[ "a Full-Stack Developer.", "a Designer.", "a Dude who loves to code.", "Batman.", "not actually Batman." ]'></span>
+                </h1>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="services">
+    <div class="section-content">
+        <div class="container">
+            <h1 class="section-title">Services</h1>
+            <p class="lead">All Apps begin the same way: as an idea. Bringing that idea to life can often seem daunting, but it doesn't have to be. From the white-board to the App store and beyond, don't let your dreams be dreams. Turn your Dreams into Reality with my
+                services.
+            </p>
+
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="card-group-wrapper">
+                        <div class="card-group">
+                            <div class="card">
+                                <div class="card-block">
+                                    <i class="fas fa-mobile-alt fa-3x"></i>
+                                    <h4 class="card-title">Mobile-first Design</h4>
+                                </div>
+                                <img src="mobile-first.jpeg" alt="mobile-first">
+                                <div class="card-block">
+                                    <p class="card-text">Smartphones, Smartwatches, and Tablets have become the predominant way people interact with the web. Creating Web pages, and Applications that work consistently across every device is fundamental to success. Optimizing
+                                        your content for the modern web is no longer optional, adopting a Mobile-first approach is paramount. I offer design services to help you provide rich user experiences across any device.
+                                    </p>
+
+                                    <button type="button" class="btn btn-3" data-toggle="modal" data-target="#serviceModal1">Learn more</button>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-block">
+                                    <i class="fas fa-terminal fa-3x"></i>
+                                    <h4 class="card-title">Development</h4>
+                                </div>
+                                <img src="development.jpg" alt="development">
+                                <div class="card-block">
+                                    <p class="card-text">Javascript and Frameworks like React, Angular, and Vue currently dominate the Modern Web. Single Page Applications, Progressive Web Applications, and Accelerated Mobile Pages are becoming more and more prevalent. However,
+                                        some Apps aren't suited for any of those specifications. I leverage modern programming languages and tools to provide the absolute best fit for your project. As a Full-stack developer, I'm knowledgeable in every
+                                        level of how the web works. Setting up and configuring Linux servers, writing server-side API, designing the front-end javascript to power an App, and everything in between.</p>
+
+                                    <button type="button" class="btn btn-3" data-toggle="modal" data-target="#serviceModal2">Learn more</button>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-block">
+                                    <i class="fas fa-chart-line fa-3x"></i>
+                                    <h4 class="card-title">Analytics</h4>
+                                </div>
+                                <img src="analytics.jpg" alt="analytics">
+                                <div class="card-block">
+                                    <p class="card-text">Data is king. Knowing how to use the data generated by users using your site or applications is essential to providing smarter, and more successful services. Search Engine Optimizing or SEO, helps you reach a wider
+                                        audience by making it more search engine friendly and increasing your position on applicable search results. But what good is any of this data if you can't make sense of it? I provide analytic dashboards customized
+                                        for you, so you can visually interpret the data that means the most to you.</p>
+
+                                    <button type="button" class="btn btn-3" data-toggle="modal" data-target="#serviceModal3">Learn more</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="about">
+    <div class="section-content">
+        <div class="container">
+            <div class="col-md-8">
+                <div class="about-text">
+                    <h3>About me</h3>
+                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem aspernatur inventore hic reprehenderit architecto rem ipsam neque deserunt reiciendis officiis!</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum repellat, voluptatibus, aspernatur, in vitae adipisci eius iste non placeat earum vero temporibus nulla maxime expedita.</p>
+
+                    <i class="fab fa-github fa-3x"></i>
+                    <a id='profile-link' href="https://github.com/freecodecamp" target="_blank" class="btn btn-3 btn-sm">Github</a>
+                    <i class="fab fa-linkedin fa-3x"></i>
+                    <a href="#" class="btn btn-3 btn-sm">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="projects">
+    <div class="section-content">
+        <div class="container-fluid">
+            <h1 class="section-title">Here is some of my previous work</h1>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="card-deck-wrapper">
+                        <div class="card-deck">
+                            <div class="card">
+                                <img class="card-img-top" src="https://user-images.githubusercontent.com/28616709/39937343-3f50fd52-5504-11e8-9e38-42f0566c9c38.png" alt="mothers-day-app">
+                                <div class="card-block">
+                                    <h4 class="card-title">Mother's Day Travel App</h4>
+                                    <p class="card-text text-muted">I Love my Mother very very much. My mom loves to travel, but after suffering an injury at work, my mom hasn't been able to travel anywhere. Since I couldn't physically take her to all the places she would love to visit,
+                                        I decided to Virtually allow her to travel to these places. Utilizing the API from unsplash.com I was able to design a simple minimalist frontend using Javascript, PUG, and SASS so that my mom could travel around
+                                        the world without leaving her own house.</p>
+
+                                    <a href="https://mcgdevfunk824.github.io/mothersdayapp/" class="btn btn-1"><svg>
+                                            <rect x="0" y="0" fill="none" width="100%" height="100%"/>
+                                          </svg>Live Demo</a>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img class="card-img-top" src="https://user-images.githubusercontent.com/28616709/40032590-947ea2e6-57a9-11e8-8f92-0fb7d0c91886.png" alt="particle-text-app">
+                                <div class="card-block">
+                                    <h4 class="card-title">Particle Text App</h4>
+                                    <p class="card-text text-muted">This was a fun experiment that turned out better than I could have hoped for. Alter the Gravity, Duration, Speed, Radius, and Resolution of these particles, and watch as they react in different ways. Also accepts user
+                                        input so that you can render something other than "Hello World!" with particles. I used vanilla Javascript, along with HTML/CSS to create this fun experiment.</p>
+
+                                    <a href="https://mcgdevfunk824.github.io/particletext/" class="btn btn-3">Live Demo</a>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img class="card-img-top" src="https://user-images.githubusercontent.com/28616709/40147172-73c10ac4-591d-11e8-994b-8cd95e477117.png" alt="markdown-notebook">
+                                <div class="card-block">
+                                    <h4 class="card-title">Markdown Notebok</h4>
+                                    <p class="card-text text-muted">This is a simple notebook that uses Markdown for formatting. I created this using the Javascript framework Vue 2 and SASS. I use this on a daily basis and I'm currently building the functionality to accept plugins to
+                                        extend this project.</p>
+
+                                    <a href="https://mcgdevfunk824.github.io/markdownnotebook/" class="btn btn-1"><svg>
+                                            <rect x="0" y="0" fill="none" width="100%" height="100%"/>
+                                          </svg>Live Demo</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-deck">
+                            <div class="card">
+                                <img class="card-img-top" src="https://user-images.githubusercontent.com/28616709/40394620-0b6408d0-5dd9-11e8-97c2-8647762137aa.png" alt="under-the-sea-app">
+                                <div class="card-block">
+                                    <h4 class="card-title">Under the Sea</h4>
+                                    <p class="card-text text-muted">This is a cartoonish looking simulation of survival under the sea. Fish have to eat in order to survive, but they also have to avoid getting eaten themselves. I created this using jQuery, Bootstrap 3, p5 Javascript
+                                        library, and font-awesome.</p>
+
+                                    <a href="https://mcgdevfunk824.github.io/under-the-sea/" class="btn btn-3">Live Demo</a>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img class="card-img-top" src="https://user-images.githubusercontent.com/28616709/41435562-1405550e-6fd4-11e8-9bc0-e2d62a5b1a01.png" alt="animated-photo-gallery">
+                                <div class="card-block">
+                                    <h4 class="card-title">Animated Photo Gallery</h4>
+                                    <p class="card-text text-muted">This is just a photo gallery that I created to display some "on hover" animations. When the mouse hovers over a picture it will display an animation. In my opinion, Animations triggered by user interaction makes a web
+                                        page or web app feel like a premium product. I created this with vanilla CSS.</p>
+
+                                    <a href="https://mcgdevfunk824.github.io/photogallery/" class="btn btn-1"><svg>
+                                            <rect x="0" y="0" fill="none" width="100%" height="100%"/>
+                                          </svg>Live Demo</a>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img class="card-img-top" src="https://user-images.githubusercontent.com/28616709/40253115-6798b4fa-5a93-11e8-821a-99a5323310b2.png" alt="wallpaper-generator">
+                                <div class="card-block">
+                                    <h4 class="card-title">Minimalist Wallpaper Generator</h4>
+                                    <p class="card-text text-muted">I created this using Babel, a Javascript toolchain that converts ECMAScript 2015+ code into backwards compatible JavaScript for older browsers.</p>
+
+                                    <a href="https://mcgdevfunk824.github.io/wallpaper-generator/" class="btn btn-3">Live Demo</a>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img class="card-img-top" src="https://user-images.githubusercontent.com/28616709/40161538-f009a7a6-5965-11e8-8a35-be9418f25a0a.png" alt="castle-duel-game">
+                                <div class="card-block">
+                                    <h4 class="card-title">Castle Duel</h4>
+                                    <p class="card-text text-muted">This is a fun browser based game that I created using the Vue 2 JavaScript framework.</p>
+
+                                    <a href="https://mcgdevfunk824.github.io/castle-duel-game/" class="btn btn-1"><svg>
+                                            <rect x="0" y="0" fill="none" width="100%" height="100%"/>
+                                          </svg>Live Demo</a>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img class="card-img-top" src="https://user-images.githubusercontent.com/28616709/39979507-b8fed900-56fb-11e8-9dd5-b6c085fa232b.png" alt="digital-greeting-card">
+                                <div class="card-block">
+                                    <h4 class="card-title">Digital Greeting Card</h4>
+                                    <p class="card-text text-muted">This is a customizable Greeting card that can be used for those times when you can't be there to wish someone a happy birthday, or other such event but you still want to send your wishes and love. I created this using
+                                        vanilla CSS.</p>
+
+                                    <a href="https://mcgdevfunk824.github.io/greetingcard/" class="btn btn-3">Live Demo</a>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img class="card-img-top" src="https://user-images.githubusercontent.com/28616709/40094281-e4447108-587a-11e8-94e6-dd35e16244c1.png" alt="giphy-api-wrapper">
+                                <div class="card-block">
+                                    <h4 class="card-title">Giphy API Wrapper</h4>
+                                    <p class="card-text text-muted">This is a simple wrapper that utilizes the API for giphy.com to display gifs relevant to the user input. I used SCSS, and Vue 2 to create this.</p>
+
+                                    <a href="https://mcgdevfunk824.github.io/giphyapi/" class="btn btn-3">Live Demo</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="project-tile"></div>
+</section>
+
+<section id="contact">
+    <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="https://mcgdevfunk824.github.io/work-form/" allowfullscreen></iframe>
+    </div>
+</section>
+
+<footer id="footer-main">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur nesciunt doloribus, ducimus dolorum nostrum dolor, minima beatae possimus inventore atque quasi non hic, corporis architecto magni explicabo doloremque.</p>
+            </div>
+            <div class="col-sm-3">
+                <ul class="list-unstyled">
+
+                    <li><i class="fab fa-twitter-square"></i><a href="#">Twitter</a></li>
+
+                    <li><i class="fab fa-github"></i><a href="https://github.com/McGdevfunk824">Github</a></li>
+
+                    <li><i class="fab fa-codepen"></i><a href="#">Codepen</a></li>
+
+                    <li><i class="fab fa-linkedin"></i><a href="#">LinkedIn</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-3">
+                <ul class="list-unstyled">
+                    <li><i class="fas fa-briefcase"></i><a href="#services" class="footer-link-underline">Services</a></li>
+                    <li><i class="far fa-id-card"></i><a href="#about" class="footer-link-underline">About</a></li>
+                    <li><i class="fas fa-code"></i><a href="#projects" class="footer-link-underline">Projects</a></li>
+                    <li><i class="fas fa-phone-square"></i><a href="#contact" class="footer-link-underline">Contact</a></li>
+                </ul>
+                <i class="far fa-arrow-alt-circle-up"></i>
+                <a href="#hero" class="back-to-top">Back to Top</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src=" App.js "></script>
+
+</body>
+
+</html>
